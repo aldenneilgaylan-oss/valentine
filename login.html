@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Login 💌</h2>
+  <input id="loginUser" placeholder="Username">
+  <input id="loginPass" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login() {
+  if (
+    loginUser.value === localStorage.getItem("username") &&
+    loginPass.value === localStorage.getItem("password")
+  ) {
+    window.location.href = "feed.html";
+  } else {
+    alert("Incorrect login 😅");
+  }
+}
+</script>
+
+</body>
+</html>

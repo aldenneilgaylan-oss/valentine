@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Feed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="feed">
+  <h2 class="feed-title">News Feed</h2>
+  <p class="welcome" id="welcomeText"></p>
+
+  <!-- POSTS -->
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo1.jpg">
+    <p>Our very first conversation on iMessage 💕</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo2.jpg">
+    <p>The first time I called you "Baby" ❤️</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo3.jpg">
+    <p>This day will always be special to me 🥰</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo4.jpg">
+    <p>Still smiling every time I think of this 💖</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo5.jpg">
+    <p>Our first dinner date at Yabu 💑</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo6.jpg">
+    <p>Our first time celebrating Valentine's Day 💘</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo7.jpg">
+    <p>Another memory I treasure 🫶</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo8.jpg">
+    <p>So many laughs, so much love @ Emilia's 😍</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo9.jpg">
+    <p>I’d choose you over and over again - Our first staycation 💗</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo10.jpg">
+    <p>Our story is my favorite 📖❤️</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo11.jpg">
+    <p>Still can’t believe how lucky I am 🥹</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo12.jpg">
+    <p>First time trying raw fish @ La Latina 💕</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo13.jpg">
+    <p>Love looks good on us - 1st Anniversary 💖</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo14.jpg">
+    <p>Every second with you matters 💞</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo15.jpg">
+    <p>Thank you for being you - La Piazza 🌷</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo16.jpg">
+    <p>So many adventures with you ahead - Marlon's Birthday Dinner @ Mamou ✨</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo17.jpg">
+    <p>My favorite person, always - My Birthday Dinner @ Melo's 🥰</p>
+  </div>
+
+  <div class="post">
+    <h4>Alden Neil</h4>
+    <img src="photo18.jpg">
+    <p>This is just the beginning ❤️</p>
+  </div>
+
+  <!-- SURVEY -->
+  <div class="survey">
+    <h3>Survey 💌</h3>
+
+    <input id="q1" placeholder="Where did we celebrate our first Valentine’s date?" required>
+    <input id="q2" placeholder="When is our anniversary?" required>
+    <textarea id="q3" placeholder="What is your favorite memory of us?" required></textarea>
+    <input id="q4" placeholder="Where did we have our first date?" required>
+    <textarea id="q5" placeholder="What's your most favorite thing about me?" required></textarea>
+
+    <button onclick="submitSurvey()">Submit Survey</button>
+  </div>
+</div>
+
+<!-- SUMMARY POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h3>Survey Summary 💖</h3>
+    <div id="summary"></div>
+    <button onclick="showValentine()">Yes</button>
+  </div>
+</div>
+
+<!-- VALENTINE -->
+<div id="valentine" class="popup">
+  <div class="popup-content">
+    <h1>WILL YOU BE MY VALENTINE? 💘</h1>
+
+    <button class="yes-btn" onclick="yesAnswer()">YES 💖</button>
+    <button id="noBtn" class="no-btn" onmouseover="runAway()">NO 😈</button>
+
+    <p id="answerResult"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

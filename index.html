@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Create Account 💕</h2>
+
+  <input id="username" placeholder="Username" required>
+  <input id="password" type="password" placeholder="Password" required>
+
+  <input placeholder="Full Name">
+  <input type="date">
+  <input placeholder="Address">
+  <input placeholder="Work">
+
+  <select id="status" required>
+    <option value="">Relationship Status</option>
+    <option value="taken">In a Relationship</option>
+  </select>
+
+  <button onclick="createAccount()">Create Account</button>
+</div>
+
+<script>
+function createAccount() {
+  const usernameInput = document.getElementById("username");
+  const passwordInput = document.getElementById("password");
+  const statusSelect = document.getElementById("status");
+
+  if (
+    usernameInput.value.trim() === "" ||
+    passwordInput.value.trim() === "" ||
+    statusSelect.value === ""
+  ) {
+    alert("Please complete all required fields 💗");
+    return;
+  }
+
+  localStorage.setItem("username", usernameInput.value);
+  localStorage.setItem("password", passwordInput.value);
+
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
