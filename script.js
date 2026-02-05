@@ -44,7 +44,12 @@ function yesAnswer() {
 
 function runAway() {
   const btn = document.getElementById("noBtn");
-  btn.style.position = "absolute";
-  btn.style.top = Math.random() * 300 + "px";
-  btn.style.left = Math.random() * 300 + "px";
+
+  const maxX = window.innerWidth - btn.offsetWidth - 20;
+  const maxY = window.innerHeight - btn.offsetHeight - 20;
+
+  btn.style.position = "fixed";
+  btn.style.left = Math.random() * maxX + "px";
+  btn.style.top = Math.random() * maxY + "px";
 }
+

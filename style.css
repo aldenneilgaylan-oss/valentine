@@ -232,3 +232,115 @@ button:hover {
     font-size: 14px;
   }
 }
+/* =========================
+   MOBILE-FIRST FIX
+   ========================= */
+
+/* Base safety for all screens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+  body {
+    background: #eef3fb;
+  }
+
+  /* Cards (Login / Create Account) */
+  .card {
+    width: 92%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  /* Feed container */
+  .feed {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .feed-title {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .welcome {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  /* Posts */
+  .post {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .post h4 {
+    font-size: 14px;
+  }
+
+  .post p {
+    font-size: 14px;
+  }
+
+  /* Buttons */
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .actions {
+    gap: 8px;
+  }
+
+  .actions button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  /* Survey */
+  .survey {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .survey h3 {
+    font-size: 18px;
+  }
+
+  /* Inputs */
+  input,
+  textarea,
+  select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  textarea {
+    min-height: 90px;
+  }
+
+  /* Popups */
+  .popup-content {
+    width: 92%;
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .popup-content h1 {
+    font-size: 20px;
+  }
+
+  .popup-content h3 {
+    font-size: 18px;
+  }
+
+  /* Prevent runaway NO from leaving screen */
+  #noBtn {
+    position: relative;
+    max-width: 100%;
+  }
+}
